@@ -29,8 +29,8 @@ int main(int argc, char **argv)
     // contain pointers to the functions add, sub, and mul
     int (*ops[ARR_LEN]) (int a, int b) = { &add, &sub, &mul };
 
-    // iterate all through all the functions contained in the array of
-    // function pointers "ops" passing a and b as the arguments 
+    // iterate through all the functions contained in the array of function
+    // pointers "ops" passing a and b as the arguments 
     for ( int i = 0; i < ARR_LEN; i++ )
         fprintf(stdout, "ops[%i](%i, %i) = %i\n", i, a, b, ops[i](a, b));
 
